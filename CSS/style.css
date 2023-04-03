@@ -35,7 +35,7 @@ nav li a:hover{
     background-color: #ffffff;
 }
 
-figure img{
+#img-perfil figure img{
     height: 450px;
     border-radius: 50px;
     -webkit-box-shadow: 8px 10px 14px 3px rgba(255, 255, 255, 0.7);
@@ -53,7 +53,7 @@ figure img{
 #contenedor-texto span{
     padding: 4px;
     border-radius: 5px;
-    background-color: #ce0ee0;
+    background-color: hsla(295, 88%, 47%, 0.411);
 }
 #contenedor-texto h4{
     font-family: 'Alkatra', cursive;
@@ -84,9 +84,9 @@ figure img{
     background-image: url(../IMG/fondo-secciones.png);
     border-bottom: 2px solid;
 }
-#acerca-de-mi img{
+#img-perfil-2 img{
     margin-top: 15%;
-    box-shadow: none;
+    height: 400px;
 }
 #contenedor-texto-2{
     padding: 20px;
@@ -99,8 +99,46 @@ figure img{
 }
 
 #mi-trabajo{
-    background-color: black;
+    text-align: center;
+    background-image: url(../IMG/fondo-secciones.png);
+    border-bottom: 2px solid;
 }
+
+#mi-trabajo img{
+    margin: 5px 0px 10px 0px;
+    height: 140px;
+    border-radius: 0px;
+}
+#contenedor-trabajos{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+#contenedor-trabajos h3{
+    margin: 8px;
+}
+#contenedor-trabajos>div{
+    color: #000000;
+    background-color: #ffffffac;
+    border-radius: 3px;
+    margin: 20px;
+    border: 1px solid;
+    height: 300px;
+    width: 300px;
+}
+#contenedor-trabajos a{
+    color: #000000;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 10px 5px;
+    padding: 3px;
+    border: 1px solid black;
+}
+
+figcaption{
+    margin-bottom: 5px;
+}
+
 
 #contacto{
     background-color: blueviolet;
