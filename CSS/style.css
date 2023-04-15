@@ -1,25 +1,36 @@
+/*REGLAS GENERALES*/
 *{
     font-family: 'Rubik', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: content-box;
 }
+body{
+    background-image: url(../IMG/fondo-body.png);
+    background-size: cover;
+    background-position: center top;
+    background-attachment: scroll;
+}
+/*HEADER Y NAV*/
 header{
     display: flex;
     justify-content: center;
 }
 nav{
+    width: 100%;
+    background-color: #00000096;
     position: absolute;
+    position: fixed;
 }
 nav ul{
     display: flex;
     justify-content: center;
 }
-nav li{
-    
+nav li{ 
+    white-space: nowrap;
     font-weight: bold;
     list-style: none;
-    padding: 20px;
+    padding: 15px;
 }
 
 nav li a{
@@ -34,10 +45,14 @@ nav li a:hover{
     color: #000000;
     background-color: #ffffff;
 }
+/*FIN HEADER Y NAV*/
 
+/*PRESENTACIÓN NOMBRE E IMAGEN*/
 #img-perfil figure img{
-    height: 450px;
-    border-radius: 50px;
+    margin-top: 20%;
+    /* margin-right: 30%; */
+    height: 350px;
+    border-radius: 100%;
     -webkit-box-shadow: 8px 10px 14px 3px rgba(255, 255, 255, 0.7);
     -moz-box-shadow: 8px 10px 14px 3px rgba(255, 255, 255, 0.7);
     box-shadow: 8px 10px 14px 3px rgba(255, 255, 255, 0.7);
@@ -56,52 +71,80 @@ nav li a:hover{
     background-color: hsla(295, 88%, 47%, 0.411);
 }
 #contenedor-texto h4{
+    margin-bottom: 15px;
     font-family: 'Alkatra', cursive;
     font-size: 2rem;
 }
 
 #section1{
-    padding: 8% 20px 0px 10px;
+    padding: 8% 20px 0px 0px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     color: #ffffff;
-    height: 90vh;
-    background-image: url(../IMG/fondo.png);
-    border-bottom: 2px solid;
+    height: 80vh;
+    /* background-image: url(../IMG/fondo.png); */
+    /* border-bottom: 2px solid; */
 }
+
+#curriculum{
+    color: #ffffff;
+    border: solid 1px #ffffff;
+    border-radius: 5px;
+    background-color: #cf0ee1;
+    padding: 5px;
+    text-decoration: none;
+
+}
+
+#curriculum:hover{
+    background-color: #000000;
+}
+/*FIN PRESENTACIÓN NOMBRE E IMAGEN*/
 
 #acerca-de-mi, #mi-trabajo{
     color: #ffffff;
-    height: 100vh;
-}
-#contacto{
-    height: 95vh; 
+    /* height: 100vh; */
 }
 
-#acerca-de-mi{
+/* #acerca-de-mi{
+    /* background-image: url(../IMG/fondo.png); */
+    /* border-bottom: 2px solid; 
+}*/
+
+#cont-img-texto{
+    padding-bottom: 20px;
     display: flex;
     justify-content: space-around;
-    background-image: url(../IMG/fondo-secciones.png);
-    border-bottom: 2px solid;
 }
 #img-perfil-2 img{
-    margin-top: 15%;
-    height: 400px;
+    margin-top: 30%;
+    height: 300px;
+    border-radius: 100%;
+    -webkit-box-shadow: 8px 10px 14px 3px rgba(255, 255, 255, 0.7);
+    -moz-box-shadow: 8px 10px 14px 3px rgba(255, 255, 255, 0.7);
+    box-shadow: 8px 10px 14px 3px rgba(255, 255, 255, 0.7);
+}
+#contendor-acerca{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #contenedor-texto-2{
-    padding: 20px;
+    line-height: 25px;
+    padding: 10px;
     background-color: #e569f045;
-    margin-top: 12%;
-    width: 40%;
-    height: 50%;
-    border-radius: 10px;
-    
+    margin-top: 6%;
+    width: 50%;
+    height: 35%;
+    border-radius: 10px;   
 }
 
 #mi-trabajo{
+    padding: 5%;
     text-align: center;
-    background-image: url(../IMG/fondo-secciones.png);
-    border-bottom: 2px solid;
+    /* background-image: url(../IMG/fondo.png); */
+    /* border-bottom: 2px solid; */
 }
 
 #mi-trabajo img{
@@ -109,45 +152,160 @@ nav li a:hover{
     height: 140px;
     border-radius: 0px;
 }
+
+#mi-trabajo h2{
+    padding-top: 40px;
+}
+
 #contenedor-trabajos{
     margin: 20px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
-#contenedor-trabajos h3{
-    margin: 8px;
+#contenedor-trabajos h4, h3, p{
+    margin: 4px 5px 14px 5px;
 }
 #contenedor-trabajos>div{
+    display: flex;
+    flex-direction: column;
     color: #000000;
     background-color: #ffffffac;
     border-radius: 3px;
-    margin: 20px;
+    margin: 20px 40px;
     border: 1px solid;
     height: 300px;
     width: 300px;
 }
+
+
 #contenedor-trabajos a{
     color: #000000;
     border-radius: 5px;
     text-decoration: none;
-    margin: 10px 5px;
+    margin: 10px 6px;
     padding: 3px;
     border: 1px solid black;
+}
+
+#contenedor-trabajos a:hover{
+    color: #ffffff;
+    background-color: #000000;
 }
 
 figcaption{
     margin-bottom: 5px;
 }
 
+#logos-about img{
+    padding: 5px 30px 5px 30px;
+    height: 50px;
+}
+#logos-about{
+    display: flex;
+    justify-content: center;
+}
 
+/*SECCIÓN DE CONTACTO*/
 #contacto{
-    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+    color: #ffffff;
+    /* background-image: url(../IMG/fondo.png); */
+    /* height: 95vh; */
+    flex-direction: column;
+    align-items: center;
+}
+#contenedor-texto-formulario{
+    background-color: #ffffff ;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+#formulario-texto{
+    margin: 20px;
+    color: #000000;
+    height: 300px;
+
+}
+#formulario-texto img{
+    padding: 10px;
+    height: 25px;
+}
+
+.formulario{
+    
+    padding: 20px;
+    color: #000000;
+    background-color: #ffffff;
+    /* margin: 0 auto; */
+    /* border: 2px solid #000000; */
+    border-radius: 5px;
+    width: 350px;
+    resize: none;
+}
+
+form .label{
+    margin: 20px 0px 20px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+form textarea{
+    padding: 6px;
+    border: none;
+    height: 150px;
+    resize: none;
+}
+form input{
+    padding: 6px;
+    border: none;
+    height: 25px;
+}
+form input,textarea{
+   background-color: #e3e0e0; 
+}
+
+#buttom{
+    padding: 5px 20px;
+}
+#buttom:hover{
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+footer{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    text-align: center;
+    /* height: 5vh; */
+    color: #000000;
+    background-color: #d00ee169;
 }
 
 
-
-footer{
-    height: 5vh;
-    color: #ffffff;
-    background-color: #000000;
+/* MEDIA QUERIES */
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    #img-perfil-2 img{
+        height: 250px;
+    }
+    #img-perfil figure img{
+        margin-top: 40%;
+        height: 250px;
+    }
+    #contenedor-texto{
+        margin-top: 18%;
+    }
+    #section1{
+        height: 50vh;
+    }
 }
