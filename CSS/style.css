@@ -288,6 +288,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
     height: 60px;
     text-align: center;
     /* height: 5vh; */
@@ -325,7 +326,7 @@ footer{
         height: 170px;
     }
     #img-perfil figure img{
-        margin: auto;
+        margin-top: -150px;
     }
     
     #acerca-de-mi{
@@ -349,6 +350,15 @@ footer{
         width: 90%;
     }
     #contenedor-texto-2{
-        width: 55%;
+        width: 95%;
+    }
+    nav,footer{
+        width: 100%;
+    }
+    #formulario-texto , #img-perfil-2 img{
+        display: none;
+    }
+    #logos-about img{
+        height: 35px;
     }
 }
