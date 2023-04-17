@@ -9,7 +9,6 @@ body{
     background-image: url(../IMG/fondo-body.png);
     background-size: cover;
     background-position: center top;
-    background-attachment: fixed;
 }
 /*HEADER Y NAV*/
 header{
@@ -106,6 +105,7 @@ nav li a:hover{
     height: 95vh;
 }
 #mi-trabajo{
+    color: #ffffff;
     height: auto;
 }
 
