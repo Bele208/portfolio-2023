@@ -295,6 +295,9 @@ footer{
     color: #000000;
     background-color: #d00ee169;
 }
+.mostrar-responsive{
+    display: none;
+}
 
 
 /* MEDIA QUERIES */
@@ -304,6 +307,7 @@ footer{
     }
     #img-perfil figure img{
         margin-top: 26%;
+        margin: 26% 30px 0px 0px;
         height: 250px;
     }
     #contenedor-texto{
@@ -317,26 +321,27 @@ footer{
         width: 55%;
     }
     #acerca-de-mi{
-        margin-top: 10%;
+        margin-top: 5%;
+    }
+    .mostrar-responsive{
+        display: none;
     }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 767px){
-    #img-perfil-2 img, #img-perfil figure img{
-        height: 170px;
-    }
     #img-perfil figure img{
-        margin-top: -150px;
+        height: 250px;
+        margin-top: -200px;
     }
-    
     #acerca-de-mi{
+        margin-top: -180px;
         height: auto;
     }
-    #contenedor-texto h4{
-        font-size: 22px;
-    }
     #contenedor-texto h1{
-        font-size: 30px;
+        font-size: 35px;
+    }
+    #contenedor-texto h4{
+        font-size: 26px;
     }
     #section1{
         flex-direction: column-reverse;
@@ -349,16 +354,32 @@ footer{
     #contenedor-texto-formulario{
         width: 90%;
     }
+    #contacto{
+        margin-top: -120px;
+    }
     #contenedor-texto-2{
         width: 95%;
     }
     nav,footer{
         width: 100%;
     }
+    
     #formulario-texto , #img-perfil-2 img{
         display: none;
     }
     #logos-about img{
         height: 35px;
     }
+    .mostrar-responsive{
+        color: #000000;
+        margin: 10px 0px 0px 0px;
+        border-radius: 5px;
+        background-color: #ffffff;
+        display: flex;
+    }
+    .mostrar-responsive img{
+        padding: 8px;
+        height: 40px;
+    }
+
 }
