@@ -278,8 +278,57 @@ form input,textarea{
     background-color: #000000;
 }
 
+#estudios{
+    margin-top: 1.5rem;
+    border-radius: 5px;
+    width: 70%;
+    background-color: #e569f045;
+}
+.certificados{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.certificados img{
+    margin: 2%;
+    height: 150px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.certificados img:hover{
+    transform: scale(1.2);
+}
+
+.imagen-popup{
+    position: fixed;
+    top: 5rem;
+    margin: auto;
+    background: rgba(0,0,0,.8);
+    height: 80%;
+    width: 80%;
+    z-index: 100;
+    display: none;
+}
+
+.imagen-popup span{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 3rem;
+    cursor: pointer;
+    z-index: inherit;
+}
+
+.imagen-popup img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 550px;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
 footer{
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -322,12 +371,16 @@ footer{
     .mostrar-responsive{
         display: none;
     }
+    /* .imagen-popup img{
+        height: 80%;
+        width: 80%;
+    } */
 }
 
 @media only screen and (min-width: 320px) and (max-width: 767px){
     #img-perfil figure img{
         height: 250px;
-        margin-top: 5%;
+        margin-top: 2%;
     }
 
     #acerca-de-mi{
