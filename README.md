@@ -1,0 +1,1 @@
+¡Hola! Este es mi sitio web personal. Aquí resumo un poco de lo que he hecho hasta el momento, poniendo en práctica aquello que voy aprendiendo.
