@@ -17,7 +17,7 @@ header{
 }
 nav{
     width: 100%;
-    background-color: #00000096;
+    background-color: #000000;
     position: absolute;
     position: fixed;
 }
@@ -69,6 +69,7 @@ nav li a:hover{
     background-color: hsla(295, 88%, 47%, 0.411);
 }
 #contenedor-texto h4{
+    margin-bottom: 20px;
     font-family: 'Alkatra', cursive;
     font-size: 2.5rem;
 }
@@ -90,7 +91,6 @@ nav li a:hover{
     background-color: #cf0ee1;
     padding: 5px;
     text-decoration: none;
-
 }
 
 #curriculum:hover{
@@ -339,6 +339,14 @@ footer{
     display: none;
 }
 
+#menu-icon {
+    font-size: 2rem;
+    color: #ffffff;
+    display: none;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+
 
 /* MEDIA QUERIES */
 @media only screen and (min-width: 768px) and (max-width: 1023px){
@@ -368,6 +376,9 @@ footer{
     }
     .imagen-popup img{
         height: 80%;
+    }
+    #menu{
+        display: block;
     }
 }
 
@@ -408,8 +419,7 @@ footer{
     }
     nav,footer{
         width: 100%;
-    }
-    
+    } 
     #formulario-texto , #img-perfil-2 img{
         display: none;
     }
@@ -442,6 +452,19 @@ footer{
         height: 80%;
         object-fit: contain;
     }
+    /*Menú responsive*/ 
+      #menu-resp {
+        display: none;
+      }
+      #menu-icon {
+        display: block;
+      }
+      nav ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
 
 }
 
