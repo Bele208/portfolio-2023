@@ -49,8 +49,7 @@ nav li a:hover{
 /*PRESENTACIÓN NOMBRE E IMAGEN*/
 #img-perfil figure img{
     margin-top: 20%;
-    /* margin-right: 30%; */
-    height: 380px;
+    height: 350px;
     border-radius: 100%;
     -webkit-box-shadow: 8px 10px 14px 3px rgba(255, 255, 255, 0.7);
     -moz-box-shadow: 8px 10px 14px 3px rgba(255, 255, 255, 0.7);
@@ -70,7 +69,6 @@ nav li a:hover{
     background-color: hsla(295, 88%, 47%, 0.411);
 }
 #contenedor-texto h4{
-    margin-bottom: 15px;
     font-family: 'Alkatra', cursive;
     font-size: 2.5rem;
 }
@@ -100,22 +98,23 @@ nav li a:hover{
 }
 /*FIN PRESENTACIÓN NOMBRE E IMAGEN*/
 
-#acerca-de-mi{
+#acerca-de-mi, #mi-trabajo{
+    text-align: center;
     color: #ffffff;
     height: auto;
 }
 #mi-trabajo{
-    color: #ffffff;
-    height: auto;
+    padding: 5%;
 }
 
 #cont-img-texto{
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
     display: flex;
     justify-content: space-around;
 }
 #img-perfil-2 img{
-    margin-top: 30%;
+    margin-top: 20%;
+    margin: 20% 0 10% 0;
     height: 350px;
     border-radius: 100%;
     -webkit-box-shadow: 8px 10px 14px 3px rgba(255, 255, 255, 0.7);
@@ -138,20 +137,13 @@ nav li a:hover{
     border-radius: 10px;   
 }
 
-#mi-trabajo{
-    padding: 5%;
-    text-align: center;
-    /* background-image: url(../IMG/fondo.png); */
-    /* border-bottom: 2px solid; */
-}
-
 #mi-trabajo img{
     margin: 5px 0px 10px 0px;
     height: 140px;
     border-radius: 0px;
 }
 
-#mi-trabajo h2{
+#mi-trabajo h2, #acerca-de-mi h2{
     padding-top: 40px;
 }
 
@@ -208,13 +200,17 @@ figcaption{
 #contacto{
     display: flex;
     justify-content: center;
-    /* padding: 2%; */
     color: #ffffff;
-    /* background-image: url(../IMG/fondo.png); */
     height: 94vh;
     flex-direction: column;
     align-items: center;
 }
+
+
+#contacto h2{
+    padding: 2%;
+}
+
 #contenedor-texto-formulario{
     background-color: #ffffff ;
     width: 70%;
@@ -305,8 +301,8 @@ form input,textarea{
     top: 4rem;
     margin: auto;
     background: rgba(0,0,0,.8);
-    height: 80%;
-    width: 80%;
+    height: 90%;
+    width: 90%;
     z-index: 100;
     display: none;
 }
@@ -449,16 +445,22 @@ footer{
 
 }
 
-@media only screen and (max-height: 500px) and (min-width: 320px) {
+@media only screen and (max-height: 600px) and (min-width: 320px) {
     #contacto{
         margin: 10% 0 12% 0;
         /* padding-bottom: 10%; */
     }
-    #img-perfil figure img{
+    #img-perfil figure img, #img-perfil-2 img{
         margin-top: 50px;
         height: 150px;
     }
     .mostrar-responsive{
         display: none;
+    }
+    #contenedor-texto h1{
+        font-size: 2rem;
+    }
+    #contenedor-texto h4{
+        font-size: 2rem;
     }
 }
