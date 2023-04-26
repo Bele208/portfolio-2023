@@ -6,7 +6,7 @@
     box-sizing: content-box;
 }
 body{
-    background-image: url(../IMG/fondo-body.png);
+    background-image: url(../IMG/fondo-2.jpg);
     background-size: cover;
     background-position: center top;
 }
@@ -75,7 +75,7 @@ nav li a:hover{
 }
 
 #section1{
-    padding: 8% 0px 0px 0px;
+    padding: 8% 0px 5px 0px;
     display: flex;
     justify-content: space-evenly;
     color: #ffffff;
@@ -103,8 +103,8 @@ nav li a:hover{
     color: #ffffff;
     height: auto;
 }
-#mi-trabajo{
-    padding: 5%;
+#mi-trabajo, #acerca-de-mi{
+    padding: 2%;
 }
 
 #cont-img-texto{
@@ -122,17 +122,17 @@ nav li a:hover{
     box-shadow: 8px 10px 14px 3px rgba(255, 255, 255, 0.7);
 }
 #contendor-acerca{
-    padding: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 #contenedor-texto-2{
+    color: #000000;
     line-height: 25px;
-    padding: 10px;
-    background-color: #e569f045;
-    margin-top: 6%;
-    width: 40%;
+    padding: 8px;
+    background-color: #ffffffac;
+    margin-top: 3%;
+    width: 60%;
     height: 35%;
     border-radius: 10px;   
 }
@@ -274,12 +274,6 @@ form input,textarea{
     background-color: #000000;
 }
 
-#estudios{
-    margin-top: 1.5rem;
-    border-radius: 5px;
-    width: 70%;
-    background-color: #e569f045;
-}
 .certificados{
     display: flex;
     flex-wrap: wrap;
@@ -293,16 +287,16 @@ form input,textarea{
 }
 
 .certificados img:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .imagen-popup{
     position: fixed;
-    top: 4rem;
+    top: 3rem;
     margin: auto;
     background: rgba(0,0,0,.8);
-    height: 90%;
-    width: 90%;
+    height: 100%;
+    width: 100%;
     z-index: 100;
     display: none;
 }
@@ -329,11 +323,10 @@ footer{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 60px;
+    height: 50px;
     text-align: center;
-    /* height: 5vh; */
-    color: #000000;
-    background-color: #d00ee169;
+    color: #ffffff;
+    background-color: #000000;
 }
 .mostrar-responsive{
     display: none;
@@ -344,7 +337,7 @@ footer{
     color: #ffffff;
     display: none;
     cursor: pointer;
-    margin-right: 20px;
+    margin: 6px;
   }
 
 
@@ -384,8 +377,7 @@ footer{
 
 @media only screen and (min-width: 320px) and (max-width: 767px){
     #img-perfil figure img{
-        height: 250px;
-        margin-top: 1%;
+        height: 300px;
     }
 
     #acerca-de-mi{
@@ -475,7 +467,7 @@ footer{
     }
     #img-perfil figure img, #img-perfil-2 img{
         margin-top: 50px;
-        height: 150px;
+        height: 200px;
     }
     .mostrar-responsive{
         display: none;
