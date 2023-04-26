@@ -6,7 +6,7 @@
     box-sizing: content-box;
 }
 body{
-    background-image: url(../IMG/fondo-2.jpg);
+    background-image: url(../IMG/fondo-2.webp);
     background-size: cover;
     background-position: center top;
 }
@@ -104,7 +104,7 @@ nav li a:hover{
     height: auto;
 }
 #mi-trabajo, #acerca-de-mi{
-    padding: 2%;
+    padding: 3%;
 }
 
 #cont-img-texto{
