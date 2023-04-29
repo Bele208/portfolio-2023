@@ -386,8 +386,8 @@ footer{
         height: 300px;
     }
 
-    #acerca-de-mi{
-        margin-top: 5%;
+    #acerca-de-mi h2{
+        margin-top: 10%;
         height: auto;
         
     }
