@@ -90,8 +90,6 @@ figure #logo-nbl{
     justify-content: space-evenly;
     color: #ffffff;
     height: 95vh;
-    /* background-image: url(../IMG/fondo.png); */
-    /* border-bottom: 2px solid; */
 }
 
 #curriculum{
@@ -112,8 +110,6 @@ figure #logo-nbl{
     text-align: center;
     color: #ffffff;
     height: auto;
-}
-#mi-trabajo, #acerca-de-mi{
     padding: 3%;
 }
 
@@ -217,7 +213,7 @@ figcaption{
 }
 
 
-#contacto h2{
+#contacto>h2{
     padding: 2%;
 }
 
@@ -333,7 +329,7 @@ footer{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 50px;menu-icon
+    height: 50px;
     text-align: center;
     color: #ffffff;
     background-color: #000000;
@@ -357,7 +353,7 @@ footer{
         height: 250px;
     }
     #img-perfil figure img{
-        margin: 26% 30px 0px 0px;
+        margin: 20% 30px 0px 0px;
         height: 250px;
     }
     #contenedor-texto{
@@ -371,7 +367,7 @@ footer{
         width: 55%;
     }
     #acerca-de-mi{
-        margin-top: 5%;
+        /* margin-top: 5%; */
         height: auto;
     }
     .mostrar-responsive{
@@ -440,7 +436,7 @@ footer{
         height: 2em;
     }
     #mi-trabajo{
-        margin-bottom: 15%;
+        margin-bottom: 10%;
         height: auto;
     }
     .imagen-popup img{
@@ -469,8 +465,9 @@ footer{
     figure #logo-nbl{
         display: block;
     }
-    
-
+    #acerca-de-mi h2{
+        padding-top: 2%; 
+    } 
 }
 
 @media only screen and (max-height: 600px) and (min-width: 320px) {
@@ -479,7 +476,7 @@ footer{
         /* padding-bottom: 10%; */
     }
     #img-perfil figure img, #img-perfil-2 img{
-        margin-top: 50px;
+        margin-top: 40px;
         height: 200px;
     }
     .mostrar-responsive{
