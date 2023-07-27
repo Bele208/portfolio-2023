@@ -6,6 +6,7 @@
     box-sizing: content-box;
 }
 body{
+    background-color: #f585ff9e;
     background-image: url(../IMG/fondo-2.webp);
     background-size: cover;
     background-position: center top;
