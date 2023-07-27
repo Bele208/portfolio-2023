@@ -1,11 +1,11 @@
 //-----------Menú responsive---------//
 let menuIcon = document.getElementById('menu-icon');
 let menu = document.getElementById('menu-resp');
-let links = menu.getElementsByTagName('a'); // Obtén todos los enlaces del menú
+let links = menu.getElementsByTagName('a'); // Todos los enlaces del menú
 
 // Añade un evento de click al ícono de menú
 menuIcon.addEventListener('click', function() {
-  // Cambia el icono de ☰ a una X y muestra/oculta el menú
+// Cambia el icono de ☰ a una X y muestra y oculta el menú
   if (menu.style.display === 'flex') {
     menu.style.display = 'none';
     menuIcon.innerHTML = '☰';
@@ -15,16 +15,16 @@ menuIcon.addEventListener('click', function() {
   }
 });
 
-// Añade un evento de click a cada enlace del menú
+// Añade un evento a cada enlace del menú
 for (let i = 0; i < links.length; i++) {
   links[i].addEventListener('click', function() {
-    if (window.innerWidth <=767){
+    if (window.innerWidth <=767){ //En pantallas de ese tamaño o menos
     menu.style.display = 'none';
     menuIcon.innerHTML = '☰';
     }
   });
 }
-// Añade un evento de redimensionamiento de ventana
+// Redimenciona la ventana
 window.addEventListener('resize', function() {
 // Muestra el menú automáticamente en pantallas grandes después de hacer clic en un enlace
     if (window.innerWidth > 767 && menu.style.display === 'none') {
